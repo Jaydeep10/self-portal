@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "about.html" %}
+{% load staticfiles %}
+
+
+{% block body_block %}
+<header>
+  <div  class="div-img-bg">
+  <!--  <iframe  src="{% static "/images/Jay.jpg" %}" width="100%" frameborder="0" ></iframe>-->
+  <img src="{% static "/images/Jay.jpg"  %}" align="float"  style="width:12%;height:50%;border-radius: 10%" alt="Avatar">
+  </div>
+<div class="container">
+    <embed type="application/pdf" src="{% static 'images/resume.pdf'%}" width="100%" height="600px" />
+</div>
+</header>
+{% endblock %}
